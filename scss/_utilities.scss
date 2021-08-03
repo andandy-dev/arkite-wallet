@@ -1,0 +1,75 @@
+// button styles
+%btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 2rem;
+    transition: all 0.5s ease;
+    box-shadow: $shadow-black-300;
+    font-weight: 500;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+
+    &:focus {
+        box-shadow: $shadow-black-300
+    }
+}
+.btn--primary {
+    @extend %btn;
+    background-color: $light-text;
+    color: $primary-color;
+
+    &:hover {
+        background-color: $primary-color;
+        color: $light-text;
+    }
+}
+
+.btn--dark {
+    @extend %btn;
+    background-color: $dark-color;
+    color: $light-text;
+
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+.download-btn{
+    transition: all 0.5s ease;
+}
+.download-btn:hover {
+    transform: scale(0.98);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+.hl-text {
+    color: $primary-color;
+}
+
+
+/*---------------Animations------------*/
+@keyframes bounce-top {
+
+    0%,
+    100% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+}
+@keyframes spin-01 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

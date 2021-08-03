@@ -1,0 +1,59 @@
+// Color shades and shadows
+$primary-color: #6d07e6;
+$secondary-color: #793bfc;
+$dark-color: #2b187a;
+$color-1: #e6b812;
+$color-2: #d550e4;
+$black-900: #000000;
+$black-400: #555555;
+$black-100: #f4f4f4;
+$light-text: #fff;
+$shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+
+// Set text color based on bg
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return $black-400;
+    }
+
+    @else {
+        @return $light-text;
+    }
+}
+
+// Set background & text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color)
+}
+
+
+@mixin form-control{
+    margin-bottom: 25px;
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: $shadow-black-100;
+    border-radius: 30px;
+    padding: 0 24px;
+    color: $black-900;
+    background-color: $black-100;
+    transition: all 0.5s ease;
+}
+@mixin container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+

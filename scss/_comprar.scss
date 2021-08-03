@@ -1,0 +1,113 @@
+/*------------------------ How to buy---------------------- */
+.how-to-buy{
+    @include set-background($light-text);
+    position: relative;
+    .effect-wrap .effect {
+        position: absolute;
+    }
+    
+    .effect-wrap .effect-4 {
+        left: -5%;
+        top: 10%;
+        font-size: 20px;
+        color: $dark-color;
+        animation: spin-01 5s ease infinite;
+    }
+    
+    .effect-wrap .effect-5 {
+        left: 95%;
+        bottom: -10%;
+        font-size: 20px;
+        color: $primary-color;
+        animation: spin-01 5s ease infinite;
+    }
+    .buy-steps{
+        height: 400px;
+        position: relative;
+    }
+    .icon-steps{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 60px;
+        border: 1px solid transparent;
+        box-shadow: $shadow-black-100;
+        border-radius: 30px;
+        padding: 0 24px;
+        background-color: $black-100;
+        text-align: center;
+        position: relative;
+        transition: transform 0.2s ease-in;
+        &:hover{
+            transform: translateY(-15px);
+        }
+        &__img{
+            width: 80px;
+            padding-bottom: 30px;
+            align-self: center;
+        }
+    }
+}
+
+/*-----------------------Crypto Coins Section----------------*/
+.coin{
+    @include set-background($light-text);
+    &__card{
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 10px;
+        height: max-content;
+        background-color: #fff;
+        text-align: center;
+        margin: 18px 10px 40px;
+        transition: transform 0.2s ease-in;
+        &:hover{
+            transform: translateY(-15px);
+        }
+        & img{
+            width: 120px;
+        }
+    }
+}
+
+
+/*------------------------ Crypto Coins---------------------- */
+.price{
+    @include set-background($light-text);
+    .cripto-image {
+        width: 50px;
+    }
+    .styled-table{
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9rem;
+        width: 100%;
+        box-shadow: $shadow-black-100;
+        & thead tr{
+            background-color: $primary-color;
+            color: $light-text;
+            text-align: left;
+        }
+        & th, td{
+            padding: 12px 15px;
+        }
+        & tbody tr{
+            border-bottom: 1px solid $black-100;
+            &:nth-of-type(even){
+                background-color: $black-100;
+            }
+            &:last-of-type{
+                border-bottom: 2px solid $primary-color;
+            }
+            &.active-row{
+                font-weight: bold;
+                color: $dark-color;
+            }
+        }
+    }
+}
+
+
