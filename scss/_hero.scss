@@ -1,4 +1,5 @@
-.hero{
+/*------------------------Hero Landing   --------------------------------  */
+.hero {
     background-image: url(/media/background-hero.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,11 +9,12 @@
     color: $light-text;
     position: relative;
     z-index: 1;
+
     .effect-wrap .effect {
         position: absolute;
         z-index: -1;
     }
-    
+
     .effect-wrap .effect-1 {
         left: 10%;
         top: 20%;
@@ -20,7 +22,7 @@
         color: $color-1;
         animation: spin-01 5s ease infinite;
     }
-    
+
     .effect-wrap .effect-2 {
         left: 5%;
         bottom: 30%;
@@ -28,6 +30,7 @@
         color: $color-1;
         animation: spin-01 5s ease infinite;
     }
+
     .hero-img {
         position: relative;
         right: -4rem;
@@ -37,7 +40,8 @@
     }
 }
 
-.hero-buy{
+/*------------------------Hero How to buy   --------------------------------  */
+.hero-buy {
     background-image: url(/media/bg-buy.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,11 +50,12 @@
     color: $light-text;
     position: relative;
     z-index: 1;
+
     .effect-wrap .effect {
         position: absolute;
         z-index: -1;
     }
-    
+
     .effect-wrap .effect-1 {
         left: 10%;
         top: 20%;
@@ -58,7 +63,7 @@
         color: $color-1;
         animation: spin-01 5s ease infinite;
     }
-    
+
     .effect-wrap .effect-2 {
         left: 5%;
         bottom: 30%;
@@ -66,6 +71,7 @@
         color: $color-2;
         animation: spin-01 5s ease infinite;
     }
+
     .hero-img {
         position: relative;
         right: -4rem;
@@ -73,5 +79,3 @@
         width: 400px;
     }
 }
-
-

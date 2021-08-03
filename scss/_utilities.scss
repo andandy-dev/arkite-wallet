@@ -1,4 +1,4 @@
-// button styles
+/*------------------------ Utilities   --------------------------------  */
 %btn {
     display: inline-block;
     padding: 0.75rem 2rem;
@@ -17,6 +17,7 @@
         box-shadow: $shadow-black-300
     }
 }
+
 .btn--primary {
     @extend %btn;
     background-color: $light-text;
@@ -33,13 +34,15 @@
     background-color: $dark-color;
     color: $light-text;
 
-    &:hover{
+    &:hover {
         background-color: $primary-color;
     }
 }
-.download-btn{
+
+.download-btn {
     transition: all 0.5s ease;
 }
+
 .download-btn:hover {
     transform: scale(0.98);
 }
@@ -47,6 +50,7 @@
 .section-padding {
     padding: 80px 0;
 }
+
 .hl-text {
     color: $primary-color;
 }
@@ -64,6 +68,7 @@
         transform: translateY(0px);
     }
 }
+
 @keyframes spin-01 {
     from {
         transform: rotate(0deg);
@@ -71,5 +76,19 @@
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
     }
 }

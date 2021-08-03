@@ -1,8 +1,14 @@
+/*------------------------Colors, Shadows and Shades   --------------------------------  */
+/*------------------------Set text color based on bg  --------------------------------  */
+/*------------------------Set background and text color  --------------------------------  */
+/*------------------------Utilities mixins --------------------------------  */
+/*------------------------ Navigation Bar  --------------------------------  */
 .navigation-bar {
   background-color: #f5f7f6;
 }
 
-.navigation-bar__logo, .navigation-bar .nav-link {
+.navigation-bar__logo,
+.navigation-bar .nav-link {
   color: #6d07e6;
   font-weight: 500;
 }
@@ -27,6 +33,7 @@
   transform: scale(0);
 }
 
+/*------------------------Hero Landing   --------------------------------  */
 .hero {
   background-image: url(/media/background-hero.png);
   background-size: cover;
@@ -68,6 +75,7 @@
   animation: bounce-top 3s ease infinite;
 }
 
+/*------------------------Hero How to buy   --------------------------------  */
 .hero-buy {
   background-image: url(/media/bg-buy.png);
   background-size: cover;
@@ -107,6 +115,7 @@
   width: 400px;
 }
 
+/*------------------------ Utilities   --------------------------------  */
 .btn--primary, .btn--dark {
   display: inline-block;
   padding: 0.75rem 2rem;
@@ -181,6 +190,19 @@
   }
 }
 
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/*------------------------Features Section   --------------------------------  */
 .features {
   background-color: #fff;
   color: #555555;
@@ -297,6 +319,7 @@
   background-color: #6d07e6;
 }
 
+/*------------------------Fun features Section   --------------------------------  */
 .fun-features {
   background-color: #f4f4f4;
   color: #555555;
@@ -351,6 +374,7 @@
   background-color: #2b187a;
 }
 
+/*------------------------App Download   --------------------------------  */
 .app-download {
   background-image: url(/media/background-hero.png);
   background-position: bottom;
@@ -365,18 +389,7 @@
   width: 600px;
 }
 
-@keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-
+/*------------------------How it Works  --------------------------------  */
 .how-it-works {
   background-color: #fff;
   color: #555555;
@@ -707,7 +720,7 @@
   width: 120px;
 }
 
-/*------------------------ Crypto Coins---------------------- */
+/*------------------------ Crypto Coins PRICE section---------------------- */
 .price {
   background-color: #fff;
   color: #555555;
@@ -731,7 +744,8 @@
   text-align: left;
 }
 
-.price .styled-table th, .price .styled-table td {
+.price .styled-table th,
+.price .styled-table td {
   padding: 12px 15px;
 }
 

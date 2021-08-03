@@ -1,5 +1,6 @@
 /*------------------------ Media Queries---------------------- */
 @media screen and (max-width: 577px) and (min-width: 320px) {
+
     .hero,
     .hero-buy {
         background-image: url(/media/background-mobile.png);
@@ -16,8 +17,9 @@
         display: block;
         margin: 0.4em auto;
     }
+
     .hero__text,
-    .hero-buy__text{
+    .hero-buy__text {
         margin-top: 100px;
     }
 
@@ -63,9 +65,11 @@
     .fun-features__img {
         width: 150px;
     }
-    .flex-wrap{
+
+    .flex-wrap {
         flex-direction: column;
     }
+
     .download-img {
         width: 350px;
     }
@@ -79,11 +83,13 @@
         border-radius: 8px;
         margin-bottom: 30px;
     }
-    .medios__list img{
+
+    .medios__list img {
         padding: 1rem 1rem 1rem 0;
         width: 150px;
     }
-    .btn-wrap{
+
+    .btn-wrap {
         align-content: center;
     }
 
@@ -95,10 +101,11 @@
     }
 
     .how-to-buy .buy-steps,
-    .coin{
+    .coin {
         height: auto;
         padding: 0 10px 0 10px;
     }
+
     .buy-steps {
         flex-wrap: wrap;
     }
@@ -107,7 +114,9 @@
         overflow-x: auto;
     }
 }
+
 @media screen and (max-width: 991px) and (min-width: 578px) {
+
     .home-divider,
     .contact__coin__eth {
         display: none;
@@ -116,17 +125,21 @@
     .how-it-works__item.line-right::before {
         display: none;
     }
-    .hero__text{
+
+    .hero__text {
         padding-top: 100px;
     }
-    .hero__img{
+
+    .hero__img {
         width: 300px;
         margin-left: 60px;
     }
+
     .fun-features__img {
         width: 200px;
     }
-    .fun-features__title{
+
+    .fun-features__title {
         margin-top: 5rem;
     }
 
@@ -134,16 +147,20 @@
     .fun-features__text {
         text-align: center;
     }
-    .footer__social ul{
+
+    .footer__social ul {
         justify-content: center;
     }
-    .medios__list{
+
+    .medios__list {
         justify-content: center;
-        & img{
+
+        & img {
             margin: 8px 0 8px 0;
         }
     }
-    .how-it-works__item{
+
+    .how-it-works__item {
         box-shadow: $shadow-black-100;
         border-radius: 8px;
         margin-bottom: 30px
@@ -157,19 +174,21 @@
     .buy-steps {
         flex-wrap: wrap;
     }
+
     .testimonial__item {
         width: inherit;
     }
-    .how-to-buy .buy-steps{
+
+    .how-to-buy .buy-steps {
         height: inherit;
     }
-    .coin__cards{
+
+    .coin__cards {
         justify-content: center;
     }
+
     .footer__title,
     .footer__text {
         text-align: center;
     }
-
-
 }

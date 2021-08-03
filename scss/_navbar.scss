@@ -1,15 +1,21 @@
-.navigation-bar{
+/*------------------------ Navigation Bar  --------------------------------  */
+.navigation-bar {
     background-color: #f5f7f6;
-    &__logo, .nav-link {
+
+    &__logo,
+    .nav-link {
         color: $primary-color;
         font-weight: 500;
     }
-    .navigation-link{
+
+    .navigation-link {
         position: relative;
-        &:hover::before{
+
+        &:hover::before {
             transform: scale(1);
         }
-        &::before{
+
+        &::before {
             content: "";
             position: absolute;
             left: 0;

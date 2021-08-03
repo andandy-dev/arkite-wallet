@@ -1,3 +1,4 @@
+/*------------------------App Download   --------------------------------  */
 .app-download {
     background-image: url(/media/background-hero.png);
     background-position: bottom;
@@ -6,44 +7,39 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+
     .download-img {
         width: 600px;
     }
-    
-}
-@keyframes float {
-    0% {
-        transform: translatey(0px);
-    }
 
-    50% {
-        transform: translatey(-20px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
 }
-.how-it-works{
+
+/*------------------------How it Works  --------------------------------  */
+.how-it-works {
     @include set-background($light-text);
     position: relative;
-    &__coins{
+
+    &__coins {
         position: absolute;
         opacity: 0.5;
-        img{
+
+        img {
             width: 180px;
         }
-        &__btc{
+
+        &__btc {
             transform: translatey(0px);
             animation: float 6s ease-in-out infinite;
         }
     }
-    &__item{
+
+    &__item {
         padding: 30px;
         text-align: center;
         position: relative;
         z-index: 1;
-        &.line-right::before{
+
+        &.line-right::before {
             content: "";
             position: absolute;
             height: 2px;
@@ -53,7 +49,8 @@
             background-color: $primary-color;
             z-index: -1;
         }
-        .step{
+
+        .step {
             display: inline-block;
             height: 60px;
             width: 60px;
@@ -66,15 +63,17 @@
             font-weight: 500;
             margin: 0 0 15px;
         }
+
         & h3 {
             margin: 20px 0;
             color: $black-900;
             text-transform: capitalize;
         }
+
         & p {
             margin: 0;
             color: $black-400;
 
+        }
     }
-}
 }
