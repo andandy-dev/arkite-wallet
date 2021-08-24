@@ -1324,6 +1324,17 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .home-divider {
+    display: none;
+  }
+  .hero {
+    background-image: url(/media/bg-buy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 /*------------------------Reset Config-------------------------------------- */
 * {
   margin: 0;
